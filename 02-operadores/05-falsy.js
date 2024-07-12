@@ -1,0 +1,24 @@
+//short circuit: corto circuito 
+
+//Falso
+//false
+// 0
+//'' strings vacíos     todos estos se conocen como falsy
+//null
+//undefined
+//NaN
+let nombre ='Chanchito feliz';
+let username  = nombre || 'Anonimo';
+console.log(username);
+
+function fn1(){
+    console.log('soy funcion 1');
+    return false;
+
+}
+function fn2(){
+    console.log('soy funcion 2')
+    return true;
+}
+
+let x = fn1() && fn2();
